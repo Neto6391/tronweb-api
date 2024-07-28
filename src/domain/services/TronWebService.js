@@ -1,5 +1,5 @@
-const tronWeb = require('@config/tronweb');
-const solc = require('solc');
+import * as tronWeb from '../../config/tronweb.js';
+import solc from 'solc';
 
 class TronWebService {
     async getAccountBalance(address) {
@@ -82,4 +82,4 @@ class TronWebService {
 
 }
 
-module.exports = new TronWebService();
+export default new TronWebService();
