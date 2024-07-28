@@ -1,5 +1,5 @@
-const express = require('express');
-const TronWebController = require('@domain/controllers/TronWebController');
+import express from 'express';
+import TronWebController from '../controllers/TronWebController.js';
 
 const router = express.Router();
 
@@ -8,4 +8,4 @@ router.post('/stake', TronWebController.stakeTRX);
 router.post('/deploy', TronWebController.deploySmartContract);
 router.post('/mirror', TronWebController.mirrorBalance);
 
-module.exports = router;
+export default router;

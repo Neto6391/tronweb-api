@@ -1,4 +1,4 @@
-const TronWebService = require('@domain/services/TronWebService');
+import TronWebService from '../../domain/services/TronWebService.js';
 
 class TronWebController {
     async getAccountBalance(req, res) {
@@ -43,4 +43,4 @@ class TronWebController {
     }
 }
 
-module.exports = new TronWebController();
+export default new TronWebController();

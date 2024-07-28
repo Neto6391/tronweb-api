@@ -1,9 +1,11 @@
-require('module-alias/register');
-const express = require('express');
-const bodyParser = require('body-parser');
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import tronwebRoutes from './interfaces/routes/tronwebRoutes.js';
 
 const app = express();
 
 app.use(bodyParser.json());
+app.use('/api', tronwebRoutes);
 
-module.exports = app;
+export default app;
