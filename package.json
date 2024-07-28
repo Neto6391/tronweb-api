@@ -21,6 +21,7 @@
   "_moduleAliases": {
     "@root": ".",
     "@config": "src/config",
-    "@domain": "/src/domain"
+    "@domain": "src/domain",
+    "@interfaces": "src/interfaces"
   }
 }
