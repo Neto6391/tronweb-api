@@ -14,5 +14,13 @@
     "express": "^4.19.2",
     "solc": "^0.8.26",
     "tronweb": "^5.3.2"
+  },
+  "devDependencies": {
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@config": "src/config",
+    "@domain": "/src/domain"
   }
 }
